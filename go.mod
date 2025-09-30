@@ -1,4 +1,4 @@
-module gopkg.in/vansante/go-dl-stream.v2
+module github.com/tadhunt/go-dl-stream
 
 go 1.17
 
