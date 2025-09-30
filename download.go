@@ -200,7 +200,7 @@ func doCopyRequestBody(
 		switch {
 		case errors.Is(err, io.EOF):
 			_ = bodyReader.Close()
-			if written != contentLength {
+			if written != contentLength  && contentLength != -1 {
 				options.Errorf("dlstream.doCopyRequestBody: Download done yet incomplete, total: %d, expected: %d", written, contentLength)
 				return written, false, ErrInconsistentDownload
 			}
