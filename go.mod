@@ -1,4 +1,4 @@
-module github.com/tadhunt/go-dl-stream
+module github.com/tadhunt/go-dl-stream/v2
 
 go 1.17
 
