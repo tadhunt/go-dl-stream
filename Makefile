@@ -3,3 +3,6 @@ all:
 	go vet
 	staticcheck
 	go build
+
+test:
+	go test -v ./...
